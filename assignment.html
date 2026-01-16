@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="/images/1.png" alt="Logo" class="logo" height="50px" width="50px">
+    </header>
+    <main>
+        <hr>
+        <section>
+            <h2>Hub for young enterprenures and statup founders</h2>
+            <p>Welcome to hebron startup lab. The home for young aspiring creators to learn, build and grow.</p>
+            <button>Call us</button>
+            <a href="#contactform">Contact us</a>
+        </section>
+        <hr>
+        <section>
+            <h2>What we do</h2>
+            <p>We support young graduates with bright ideas with the tools and resources needed to grow.</p>
+            <video controls>
+                <source src="images/farmvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <hr>
+        <section>
+            <h2>Our Team</h2>
+            <p>These are the people who make it all possible</p>
+            <img src="/images/CUALA 2025 Elections.png" alt="Team Image" height="500px" width="650px">
+        </section>
+        <hr>
+        <section>
+            <h2>Our offerings</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>Mentorship</td>
+                    <td>Get guidance from industry experts to refine your business ideas and strategies.</td>
+                    <td>6 months</td>
+                </tr>
+                <tr>
+                    <td>Workshops</td>
+                    <td>Participate in hands-on sessions to develop essential skills for startup success.</td>
+                    <td>3 months</td>
+                </tr>
+                <tr>
+                    <td>Networking Events</td>
+                    <td>Connect with like-minded entrepreneurs, investors, and industry leaders.</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Funding Opportunities</td>
+                    <td>Access potential funding sources to help kickstart your venture.</td>
+                    <td>6 months</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2>Join us</h2>
+            <p>Become a part of our growing community of innovators and change-makers.</p>
+            <form id="contactform" action="/submit_form" method="post">
+                <div>
+                    <label for="name">Fullname:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="citydropdown">City</label>
+                    <select id="citydropdown" name="citydropdown" required>
+                        <option value="lagos">Lagos</option>
+                        <option value="abuja">Abuja</option>
+                        <option value="ibadan">Ibadan</option>
+                        <option value="edo">Edo</option>
+                        <option value="portharcourt">Port Harcourt</option>
+                        <option value="kano">Kano</option>
+                        <option value="enugu">Enugu</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="number" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <label for="contact">How do we contact you</label>
+                    <input type="checkbox" id="contact" name="contact" value="email"> Email
+                    <input type="checkbox" id="contact" name="contact" value="phone"> Phone
+                    <input type="checkbox" id="contact" name="contact" value="both    "> Both
+                </div>
+                <div>
+                    <label for="referal">How did you hear about us?</label>
+                    <input type="radio" id="referal" name="referal" value="social media" required> Social Media
+                    <input type="radio" id="referal" name="referal" value="friend" required> Friend
+                    <input type="radio" id="referal" name="referal" value="advertisement" required> Advertisement
+                    <input type="radio" id="referal" name="referal" value="other" required> Other
+                </div>
+            </form>
+                <button type="submit">Submit</button>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>About</h3>
+            <ul>
+                <li>How it works</li>
+                <li>Featured</li>
+                <li>Partnership</li>
+                <li>Business Relation</li>
+            </ul>
+        </div>
+        <div>
+            <p>2022 Moses sites. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
