@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <img src="images/1.png" alt="Logo" class="logo" height="50px" width="50px">
     </header>
     <main>
         <hr>
-        <section>
+        <section class="intro">
             <h2>Hub for young entrepreneurs and startup founders</h2>
             <p>Welcome to Hebron startup lab. The home for young aspiring creators to learn, build and grow.</p>
-            <button type="button">Call us</button>
-            <a href="#contactform">Contact us</a>
+            <button type="button" class="links">Call us</button>
+            <a href="#contactform" id="button-link" class="links">Contact us</a>
         </section>
         <hr>
-        <section>
+        <section class="whatwedo">
             <h2>What we do</h2>
             <p>We support young graduates with bright ideas with the tools and resources needed to grow.</p>
             <video controls>
@@ -28,7 +28,7 @@
             </video>
         </section>
         <hr>
-        <section>
+        <section class="ourteam">
             <h2>Our Team</h2>
             <p>These are the people who make it all possible</p>
             <img src="images/CUALA-2025-Elections.png" alt="Team Image" height="500px" width="650px">
@@ -72,61 +72,58 @@
         <section>
             <h2>Join us</h2>
             <p>Become a part of our growing community of innovators and change-makers.</p>
-            <form id="contactform" action="/submit_form" method="post">
-                <div>
-                    <label for="name">Fullname:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="citydropdown">City</label>
-                    <select id="citydropdown" name="citydropdown" required>
-                        <option value="lagos">Lagos</option>
-                        <option value="abuja">Abuja</option>
-                        <option value="ibadan">Ibadan</option>
-                        <option value="edo">Edo</option>
-                        <option value="portharcourt">Port Harcourt</option>
-                        <option value="kano">Kano</option>
-                        <option value="enugu">Enugu</option>
-                        <option value="others">Others</option>
+            <form id="contactform">
+                <h2>Join us</h2>
+                <p class="form-hint">Become a part of our growing community of innovators and change-makers.</p>
+              
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input id="fullname" type="text" placeholder="e.g. Moses A." />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="e.g. moses@email.com" />
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <select id="city">
+                      <option>Lagos</option>
+                      <option>Abuja</option>
+                      <option>Port Harcourt</option>
                     </select>
-                    <label for="number">Phone Number:</label>
-                    <input type="tel" id="number" name="number" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" minlength="10" maxlength="500" required></textarea>
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" placeholder="e.g. 080..." />
+                  </div>
+              
+                  <div class="form-group full">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Type your message..."></textarea>
+                  </div>
                 </div>
-                <div>
-                    <fieldset>
-                        <legend>How do we contact you?</legend>
-                      
-                        <input type="checkbox" id="contact-email" name="contact[]" value="email">
-                        <label for="contact-email">Email</label>
-                      
-                        <input type="checkbox" id="contact-phone" name="contact[]" value="phone">
-                        <label for="contact-phone">Phone</label>
-                      
-                        <input type="checkbox" id="contact-emailandphone" name="contact[]" value="both">
-                        <label for="contact-emailandphone">Both</label>
-                      </fieldset>                      
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>How did you hear about us?</legend>
-                      
-                        <input type="radio" id="socialmedia" name="referral" value="social_media" required>
-                        <label for="socialmedia">Social Media</label>
-                      
-                        <input type="radio" id="friend" name="referral" value="friend">
-                        <label for="friend">Friend</label>
-                      
-                        <input type="radio" id="advertisement" name="referral" value="advertisement">
-                        <label for="advertisement">Advertisement</label>
-                      
-                        <input type="radio" id="otherreferral" name="referral" value="other">
-                        <label for="otherreferral">Other</label>
-                      </fieldset>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+              
+                <fieldset class="choice">
+                  <legend>How do we contact you?</legend>
+                  <label><input type="checkbox" /> Email</label>
+                  <label><input type="checkbox" /> Phone</label>
+                  <label><input type="checkbox" /> Both</label>
+                </fieldset>
+              
+                <fieldset class="choice">
+                  <legend>How did you hear about us?</legend>
+                  <label><input type="radio" name="source" /> Social Media</label>
+                  <label><input type="radio" name="source" /> Friend</label>
+                  <label><input type="radio" name="source" /> Advertisement</label>
+                  <label><input type="radio" name="source" /> Other</label>
+                </fieldset>
+              
+                <button type="submit" class="btn">Submit</button>
+              </form>              
         </section>
         <hr>
     </main>
